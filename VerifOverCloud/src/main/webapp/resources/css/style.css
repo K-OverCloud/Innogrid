@@ -1,0 +1,521 @@
+@charset "utf-8";
+
+@import "reset.css";
+
+.btn_calender span {
+	position: relative;
+	z-index: -1;
+	display: block
+}
+
+.panel_buttons button, .button_group button, .button_group button span,
+	.btns_action button, .btn_calender {
+	background: url(../images/content/button.png) no-repeat
+}
+
+.select_group .btn_calender {
+	width: 31px;
+	height: 32px;
+	border: 0;
+	margin-left: -3px;
+	vertical-align: top;
+	background-position: -300px -60px
+}
+
+.contents {
+	position: absolute;
+	float: left;
+	left: 30%;
+	/* width:1000px; */
+	min-height: 300px;
+	padding: 45px 0 80px;
+	float: left
+}
+
+/******************************** Button ACTION ****************************/
+.btns_action {
+	padding-top:8px;
+	float:right;
+	height: 26px;
+	margin: 0 auto
+}
+
+.btns_action button {
+	position: relative;
+	z-index: 1;
+	float: left;
+	width: 53px;
+	height: 25px;
+	margin-left: -1px;
+	border: 0;
+	font: .92em/27px dotum, "돋움";
+	color: #939caf
+}
+
+.btns_action button:first-child {
+	background-position: -130px -130px
+}
+
+.btns_action button:first-child+button {
+	background-position: -182px -130px
+}
+
+.btns_action button:first-child+button+button {
+	background-position: -234px -130px
+}
+
+.btns_action button:first-child[disabled=disabled], .btns_action button:first-child.disabled
+	{
+	background-position: -130px -305px
+}
+
+.btns_action button:first-child+button[disabled=disabled], .btns_action button:first-child+button.disabled
+	{
+	background-position: -182px -305px
+}
+
+.btns_action button:first-child+button+button[disabled=disabled],
+	.btns_action button:first-child+button+button.disabled {
+	background-position: -234px -305px
+}
+
+.btns_action button:hover {
+	color: #007eff
+}
+
+.btns_action button[disabled=disabled], .btns_action button.disabled {
+	cursor: default;
+	color: #c0c4d0;
+	z-index: 0
+}
+
+.btns_action button[disabled=disabled]:hover, .btns_action button.disabled:hover
+	{
+	color: #c0c4d0
+}
+
+/******************************** PANEL ********************************/
+.panel {
+	border: 1px solid #ccd1db;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom: 4px
+}
+
+.panel_title {
+	height: 41px;
+	padding: 0 10px;
+	border-bottom: 1px solid #ccd1db;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #e5e8ef url(../images/content/panel_bg_title.png) repeat-x
+		top
+}
+
+.panel_title.panel_bottom {
+	border-top: 1px solid #ccd1db;
+	border-bottom: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	background: #ebedf3 url(../images/content/panel_bg_title.png) repeat-x
+		top
+}
+
+.panel_title h4 {
+	color: #3f4355;
+	font-size: 1em;
+	padding: 12px 0 0 5px;
+	text-shadow: 0 1px 0 #fff
+}
+
+.panel_title.clearfix h4 {
+	float: left
+}
+
+.panel_title .button_group {
+	float: right;
+	padding-top: 5px
+}
+
+.panel_title .select_group_title {
+	float: left;
+	margin-left: 10px;
+	padding-top: 5px
+}
+
+.panel_content {
+	background: #fff;
+	position: relative;
+	color: #939caf
+}
+
+.panel_empty {
+	height: 300px;
+	background: #fff url(../images/content/panel_bg_empty.png) no-repeat
+		center center
+}
+
+.panel_table_container {
+	float: left;
+	width: 50%
+}
+
+.panel_content .panel_table_container:first-child table {
+	border-right: 4px double #ccd1db
+}
+
+.panel_st2 {
+	background: #f1f3f8;
+	margin-top: 20px
+}
+
+.panel_st2 .panel_title {
+	height: 40px;
+	border-top: 1px solid #f6f8fb;
+	border-bottom: 0;
+	background: none
+}
+
+.panel_st2 .panel_content {
+	margin: 0 5px 5px 5px;
+	border: 1px solid #ccd1db
+}
+
+.panel_container {
+	float: left;
+	width: 50%
+}
+
+.panel_container .panel_content {
+	height: 414px;
+	overflow: hidden
+}
+
+.clearfix .panel_container:first-child .panel {
+	margin-right: 4px
+}
+
+.clearfix .panel_container:first-child+panel_container .panel {
+	margin-left: 4px
+}
+
+.panel_container .table_panel {
+	border-bottom: 1px solid #e8ebee
+}
+
+.panel_buttons {
+	margin-top: 20px;
+	text-align: center
+}
+
+.panel_buttons button {
+	width: 81px;
+	height: 37px;
+	border: 0;
+	background-position: -130px -90px
+}
+
+.panel_buttons .btn_next {
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 0 0 1px #0047a3
+}
+
+.panel_buttons .btn_next span {
+	padding-left: 16px
+}
+
+.panel_buttons .btn_square {
+	background-position: -214px -90px
+}
+
+.panel_buttons .btn_next2 {
+	width: 107px;
+	background-position: -130px -225px
+}
+
+.panel_buttons .btn_next3 {
+	width: 161px;
+	background-position: -130px -265px
+}
+
+.panel_buttons .btn_next4 {
+	width: 120px;
+	background-position: -130px -333px
+}
+
+.panel_buttons .btn_next5 {
+	width: 175px;
+	background-position: -125px -265px
+}
+
+.panel_buttons .btn_cancel2 {
+	width: 141px;
+	background-position: -240px -225px
+}
+
+.blockContainer .panel_buttons {
+	margin-top: 40px
+}
+
+.tab_container {
+	position: relative
+}
+
+.tabmenu_chart {
+	position: absolute;
+	top: 6px;
+	right: 10px
+}
+
+.tabmenu_chart li {
+	position: relative;
+	float: left;
+	margin-left: -1px
+}
+
+.tabmenu_chart li.selected {
+	z-index: 1
+}
+
+.tabmenu_chart button {
+	width: 36px;
+	height: 32px;
+	border: 0
+}
+
+.tabmenu_chart .tab_map button {
+	background-position: -130px -158px
+}
+
+.tabmenu_chart .tab_graph button {
+	background-position: -165px -158px
+}
+
+.tabmenu_chart .tab_table button {
+	background-position: -200px -158px
+}
+
+.tabmenu_chart .tab_map.selected button {
+	background-position: -130px -190px
+}
+
+.tabmenu_chart .tab_graph.selected button {
+	background-position: -165px -190px
+}
+
+.tabmenu_chart .tab_table.selected button {
+	background-position: -200px -190px
+}
+
+.tab_container .panel {
+	display: none
+}
+
+.tabmenu_panel {
+	padding-top: 5px;
+	margin-right: -2px
+}
+
+.tabmenu_panel li {
+	position: relative;
+	float: left;
+	height: 29px;
+	line-height: 29px;
+	margin-left: -1px;
+	border: 1px solid #a8afc1;
+	border-top-color: #b6bbc9;
+	border-bottom-color: #9ca5ba;
+	overflow: hidden;
+	box-shadow: 0 1px 0 #dbdfe7;
+	background: #fff url(../images/content/tab_bg.png) repeat-x left 1px
+}
+
+.tabmenu_panel li button {
+	height: 29px;
+	padding: 0 14px;
+	border: 1px solid #fff;
+	color: #252d42;
+	text-shadow: 0 1px 0 #fff
+}
+
+.tabmenu_panel li:first-child, .tabmenu_panel li.first-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px
+}
+
+.tabmenu_panel li:last-child, .tabmenu_panel li.last-child {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px
+}
+
+.tabmenu_panel li.selected {
+	z-index: 1;
+	border: 1px solid #287fdb;
+	background: #fff url(../images/content/tab_bg.png) repeat-x left -30px
+}
+
+.tabmenu_panel li.selected button {
+	border: 0;
+	color: #fff;
+	text-shadow: none
+}
+
+.panel_title2 {
+	height: auto
+}
+
+.panel_title2 .tabmenu_panel {
+	
+}
+
+.panel_title2 .tabmenu_panel li {
+	width: 70px;
+	margin-bottom: 4px
+}
+
+.panel_title2 .tabmenu_panel li button {
+	padding: 0;
+	width: 100%
+}
+
+.panel_title2 .tabmenu_panel li:last-child, .panel_title2 .tabmenu_panel li.last-child
+	{
+	width: 69px
+}
+
+/******************************** 20140820 ADD STYLE ********************************/
+.panel .tab_content h4 {
+	height: 36px;
+	line-height: 36px;
+	color: #252d42;
+	padding: 4px 15px 0;
+	background-color: #f7f8fa;
+	border-bottom: 1px dashed #dcdfe4;
+	border-top: 1px solid #ccd1db
+}
+
+.panel .tab_content h4:first-child {
+	border-top: 0 none
+}
+
+.panel .tab_content h4 input {
+	vertical-align: middle;
+	margin-top: -2px
+}
+
+.panel .tab_content h4 label {
+	font-weight: normal;
+	vertical-align: middle;
+	padding: 0 40px 0 5px;
+	color: #525c75
+}
+
+.panel_graph_msg {
+	font-size: 11px;
+	color: #9ca0ab;
+	text-align: right
+}
+
+.panel_float_wrap {
+	float: left;
+	width: 50%;
+	border-top: 1px solid #ccd1db
+}
+
+.panel_float_wrap h4, .panel_float_wrap .panel_graph {
+	border-left: 1px solid #dcdfe4;
+	margin-left: -1px
+}
+
+.panel_graph_wrap {
+	clear: both;
+	border-top: 1px solid #b5bccb
+}
+
+.tab_content.clearfix {
+	margin-top: -1px
+}
+
+.tabmenu {
+	height: 43px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #4b75c9;
+	background-color: #f2f3f8;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px
+}
+
+.tabmenu li {
+	float: left;
+	background: url(../images/content/tab_mdd.png) no-repeat left center
+}
+
+.tabmenu li:first-child, .tabmenu li.selected+li {
+	background: none
+}
+
+.tabmenu li button {
+	height: 45px;
+	padding: 0 32px;
+	border: 0;
+	border-bottom: 2px solid #4b75c9;
+	color: #777
+}
+
+.tabmenu li.selected button {
+	background-color: #fff;
+	border: 2px solid #4b75c9;
+	border-bottom: 0 none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #4b75c9;
+	font-weight: bold
+}
+
+.verif_table {
+	text-align: left;
+}
+
+.verif_table tr {
+	height: 50px;
+}
+
+.verif_table th {
+	padding-left: 10px;
+	color: #252d42;
+	font-weight: normal;
+	border-bottom: 1px solid #e8ebee;
+	border-left: 1px solid #dfe5eb;
+	background: url(../images/content/table_bg_th.png) repeat-x top
+}
+
+.verif_table td {
+	padding: 4px 15px 2px;
+	min-height: 27px;
+	color: #939caf;
+	text-align: left;
+	border-left: 1px solid #eef1f3
+}
+
+input[type='text'] {
+	width: 100%;
+	height: 30px;
+}
+
+input[type='text'].date_input {
+	width: 26%
+}
+
+.search_group button {
+	width: 81px;
+	height: 37px;
+	border: 0;
+	margin-bottom: 10px;
+	background-position: -130px -90px
+}
+
+}
+.clearfix {
+	*zoom: 1
+}
