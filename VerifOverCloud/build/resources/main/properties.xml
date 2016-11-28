@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+     <properties>
+     	<comment>Verification Info</comment>
+     	<entry key="os">linux</entry>
+     	<entry key="system.power">off</entry>
+     	<entry key="system.period">5</entry>
+     	<entry key="system.startDate">2016-01-01</entry>
+     	<entry key="system.startHour">10</entry>
+     	<entry key="system.startMin">59</entry>
+     	<entry key="system.endDate">2016-11-30</entry>
+     	<entry key="system.endHour">17</entry>
+     	<entry key="system.endMin">59</entry>
+     	<entry key="system.targetIP">www.google.com</entry>
+     	
+     	<entry key="service.power">off</entry>
+     	<entry key="service.period">10</entry>
+     	<entry key="service.startDate">2016-01-01</entry>
+     	<entry key="service.startHour">10</entry>
+     	<entry key="service.startMin">59</entry>
+     	<entry key="service.endDate">2016-11-30</entry>
+     	<entry key="service.endHour">17</entry>
+     	<entry key="service.endMin">59</entry>
+     	<entry key="service.targetIP">www.google.com</entry>
+     	<entry key="service.targetPort">80,8080</entry>
+     	
+     	<entry key="web.power">off</entry>
+     	<entry key="web.period">15</entry>
+     	<entry key="web.startDate">2016-01-01</entry>
+     	<entry key="web.startHour">1</entry>
+     	<entry key="web.startMin">59</entry>
+     	<entry key="web.endDate">2016-11-30</entry>
+     	<entry key="web.endHour">17</entry>
+     	<entry key="web.endMin">59</entry>
+     	<entry key="web.targetIP">www.google.com</entry>
+     </properties>
