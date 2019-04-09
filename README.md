@@ -10,7 +10,7 @@ Interface Proxy
 * InfluxDB
 * Ubuntu 16.04
 
-## Install
+## Monitoring Agent Install(in Service VM)
 Execute script for agent installation for data collection of monitoring system
 
 ```
@@ -28,13 +28,13 @@ Installation Start
 $ ./install.sh
 ```
 
-## Running
+## Running(in Service VM)
 Service Running Check
 ```
 $ service start telegraf
 ```
 
-## Delete Host
+## Delete Host(in Monitoring System)
 Delete host in Monitoring System
 ```
 $ ./delete_host.sh HOSTNAME
