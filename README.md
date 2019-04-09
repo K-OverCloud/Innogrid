@@ -10,6 +10,12 @@ Interface Proxy
 * InfluxDB
 * Ubuntu 16.04
 
+## Verification System Install
+Build
+```
+$ gradle build
+```
+
 ## Monitoring Agent Install(in Service VM)
 Execute script for agent installation for data collection of monitoring system
 
