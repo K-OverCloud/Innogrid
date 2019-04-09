@@ -33,3 +33,9 @@ Service Running Check
 ```
 $ service start telegraf
 ```
+
+## Delete Host
+Delete host in Monitoring System
+```
+$ ./delete_host.sh HOSTNAME
+```
